@@ -25,6 +25,13 @@ const routes = [
         },
         component: () => import ("../views/Triangle.vue")
       }, {
+        path: "/calendar",
+        name: "calendar",
+        meta: {
+          title: '万年历'
+        },
+        component: () => import ("../views/Calendar.vue")
+      }, {
         path: "/table",
         name: "basetable",
         meta: {

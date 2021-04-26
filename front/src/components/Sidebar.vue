@@ -50,6 +50,11 @@ export default {
           title: "三角形"
         },
         {
+          icon: "el-icon-date",
+          index: "calendar",
+          title: "万年历"
+        },
+        {
           icon: "el-icon-lx-cascades",
           index: "table",
           title: "基础表格"
