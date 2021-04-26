@@ -55,6 +55,11 @@ export default {
           title: "万年历"
         },
         {
+          icon: "el-icon-date",
+          index: "commission",
+          title: "佣金"
+        },
+        {
           icon: "el-icon-lx-cascades",
           index: "table",
           title: "基础表格"

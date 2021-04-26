@@ -32,6 +32,13 @@ const routes = [
         },
         component: () => import ("../views/Calendar.vue")
       }, {
+        path: "/commission",
+        name: "commission",
+        meta: {
+          title: '佣金'
+        },
+        component: () => import ("../views/Commission.vue")
+      },{
         path: "/table",
         name: "basetable",
         meta: {
