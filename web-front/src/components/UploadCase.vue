@@ -125,8 +125,17 @@ export default {
       else{
         console.log(this.selection);
         this.selection.forEach(item => {
-          this.tableData[item.index].Result = "correct"
-          this.$set(this.tableData, item.index,item)
+          let query={
+            question:this.$store.state.question,
+            case:JSON.stringify(item)
+          }
+          console.log(query)
+          fetchResult(query).then(resp=>{
+            console.log("=======success！！！=====")
+            console.log(resp)
+          // this.tableData[item.index].Result = "correct"
+          // this.$set(this.tableData, item.index,item)
+          })
         })
       }
     },

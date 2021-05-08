@@ -1,12 +1,9 @@
 import request from '../utils/request';
 
-export const fetchResult = query => {
+export const fetchResult = data => {
   return request({
     url: '/test',
-    method: 'get',
-    params: {
-      question:query.question,
-      tableData:query.tableData
-    }
+    method: 'post',
+    data
   });
 };
