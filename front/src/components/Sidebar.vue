@@ -69,22 +69,6 @@ export default {
           index: "form",
           title: "表单"
         }
-        // ,
-        // {
-        //   icon: "el-icon-lx-calendar",
-        //   index: "form",
-        //   title: "表单",
-        //   subs: [
-        //     {
-        //       index: "form",
-        //       title: "基本表单"
-        //     },
-        //     {
-        //       index: "upload",
-        //       title: "文件上传"
-        //     }
-        //   ]
-        // }
       ]
     };
   },
