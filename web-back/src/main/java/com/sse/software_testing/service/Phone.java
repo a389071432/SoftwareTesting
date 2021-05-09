@@ -25,10 +25,10 @@ public class Phone {
     private static int MaxPhoneTime=44640;
     private static double MaxLastYearCost=6721.0;
     private static int MaxUnCostTimes=11;
-    public static Double calPhoneBill(int phone_time,int uncost_times,double last_year_cost){
-        if(phone_time<0||phone_time>MaxPhoneTime||uncost_times<0||uncost_times>MaxUnCostTimes||last_year_cost<0||last_year_cost>MaxLastYearCost){
+    public static Double calPhoneBill(int phone_time,int uncost_times){
+        if(phone_time<0||phone_time>MaxPhoneTime||uncost_times<0||uncost_times>MaxUnCostTimes){
             return -1.0;
         }
-        return 25.0+phone_time*0.15*(1-getDiscount(phone_time, uncost_times))+last_year_cost*0.05;
+        return 25.0+phone_time*0.15*(1-getDiscount(phone_time, uncost_times));
     }
 }
