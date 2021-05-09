@@ -133,8 +133,9 @@ export default {
           fetchResult(query).then(resp=>{
             console.log("=======success！！！=====")
             console.log(resp)
-          // this.tableData[item.index].Result = "correct"
-          // this.$set(this.tableData, item.index,item)
+            this.tableData[item.index].RealOutput = resp.realOutput
+            this.tableData[item.index].Result = resp.result
+            this.$set(this.tableData, item.index,item)
           })
         })
       }
