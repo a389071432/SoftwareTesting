@@ -11,7 +11,7 @@ public class Computer {
 	private static int price_monitor=30;
 	private static int price_external=45;
 	
-	public static Double calcu_commission(int cnt_main,int cnt_monitor,int cnt_external){
+	public static double calcu_commission(int cnt_main,int cnt_monitor,int cnt_external){
 		if(cnt_main<0||cnt_main>max_main||cnt_monitor<0||cnt_monitor>max_monitor||cnt_external<0||cnt_external>max_external)
 			return -1;
 		double saled=cnt_main*price_main+cnt_price*price_monitor+cnt_external*price_external;
