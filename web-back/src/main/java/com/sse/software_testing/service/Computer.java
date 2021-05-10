@@ -4,7 +4,7 @@ package com.sse.software_testing.service;
  * @author hq
  */
 public class Computer {
-  private static int max_main=70;
+        private static int max_main=70;
 	private static int max_monitor=80;
 	private static int max_external=90;
 	private static int price_main=25;
